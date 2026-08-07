@@ -1,10 +1,13 @@
 import { ImageResponse } from "next/og";
 
+// Deliberately not named `opengraph-image.tsx` — Next's magic-filename
+// convention for that name always auto-generates its own og:image tag
+// using a basePath-naive URL, silently overriding the explicit one set in
+// layout.tsx's metadata (confirmed by testing against the live deploy).
+// A plain route handler avoids that auto-detection entirely.
 export const dynamic = "force-static";
-export const size = { width: 1200, height: 630 };
-export const contentType = "image/png";
 
-export default async function OpengraphImage() {
+export async function GET() {
   return new ImageResponse(
     (
       <div
@@ -57,6 +60,6 @@ export default async function OpengraphImage() {
         </div>
       </div>
     ),
-    { ...size }
+    { width: 1200, height: 630 }
   );
 }

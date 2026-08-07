@@ -16,9 +16,9 @@ const title = "Maruf Prodhan — Founder & Product Builder";
 const description =
   "Founder of Movexa and iOS product builder. I build AI-powered products that turn complex problems into simple, useful experiences.";
 const siteUrl = "https://mdmarufprodhan.github.io/maruf-portfolio";
+const ogImageUrl = `${siteUrl}/og`;
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mdmarufprodhan.github.io"),
   title,
   description,
   authors: [{ name: "Maruf Prodhan" }],
@@ -28,11 +28,13 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "Maruf Prodhan",
     type: "website",
+    images: [{ url: ogImageUrl, width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
+    images: [ogImageUrl],
   },
 };
 
