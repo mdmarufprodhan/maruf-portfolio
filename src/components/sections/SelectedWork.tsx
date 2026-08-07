@@ -7,14 +7,27 @@ import { Card } from "@/components/ui/Card";
 import { Reveal } from "@/components/ui/Reveal";
 import { withBasePath } from "@/lib/utils";
 
-const projects = [
+type Project = {
+  name: string;
+  role: string;
+  description: string;
+  tech: string[];
+  link: string | null;
+  screenshot?: string;
+  screenshotAlt?: string;
+};
+
+const projects: Project[] = [
   {
     name: "Shadhin Music",
-    role: "iOS Developer",
+    role: "Senior iOS Developer",
     description:
       "Bangladesh's leading music streaming app, used by thousands of daily users. Built core streaming features and integrated MyGP and MyBL telco billing for seamless content access.",
     tech: ["Swift", "SwiftUI", "Telco SDK Integration"],
     link: "https://apps.apple.com/us/app/shadhin-music/id1481808365",
+    screenshot: "/work/shadhin-music.png",
+    screenshotAlt:
+      "Shadhin Music app home screen with a featured exclusive podcast and personalized listening recommendations",
   },
   {
     name: "AISocial",
@@ -106,9 +119,21 @@ export function SelectedWork() {
           {projects.map((project, i) => (
             <Reveal key={project.name} delay={i * 0.05}>
               <Card className="flex h-full flex-col gap-5">
-                <div className="flex h-32 items-center justify-center gap-2 rounded-lg border border-dashed border-border bg-muted text-muted-foreground">
-                  <ImageOff className="size-4" />
-                  <span className="text-xs">Screenshot not available</span>
+                <div className="relative h-32 overflow-hidden rounded-lg border border-border bg-muted">
+                  {project.screenshot ? (
+                    <Image
+                      src={withBasePath(project.screenshot)}
+                      alt={project.screenshotAlt ?? `${project.name} screenshot`}
+                      fill
+                      sizes="(min-width: 640px) 380px, 90vw"
+                      className="object-cover object-[50%_15%]"
+                    />
+                  ) : (
+                    <div className="flex h-full items-center justify-center gap-2 border border-dashed border-border text-muted-foreground">
+                      <ImageOff className="size-4" />
+                      <span className="text-xs">Screenshot not available</span>
+                    </div>
+                  )}
                 </div>
 
                 <div className="flex flex-col gap-2">
