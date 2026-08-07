@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ArrowUpRight, CreditCard } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
+import { withBasePath } from "@/lib/utils";
 
 const MOVEXA_URL =
   "https://apps.apple.com/fr/app/movexa/id6786145132?l=en-GB";
@@ -115,7 +116,7 @@ export function Movexa() {
               >
                 <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg transition-transform duration-300 ease-out-premium group-hover:-translate-y-1">
                   <Image
-                    src={screen.src}
+                    src={withBasePath(screen.src)}
                     alt={screen.alt}
                     width={1242}
                     height={2688}

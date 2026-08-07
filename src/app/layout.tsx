@@ -15,16 +15,17 @@ const geistMono = Geist_Mono({
 const title = "Maruf Prodhan — Founder & Product Builder";
 const description =
   "Founder of Movexa and iOS product builder. I build AI-powered products that turn complex problems into simple, useful experiences.";
+const siteUrl = "https://mdmarufprodhan.github.io/maruf-portfolio";
 
-// No production domain confirmed yet — set metadataBase once this site is
-// deployed so Open Graph/Twitter image URLs resolve to an absolute path.
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mdmarufprodhan.github.io"),
   title,
   description,
   authors: [{ name: "Maruf Prodhan" }],
   openGraph: {
     title,
     description,
+    url: siteUrl,
     siteName: "Maruf Prodhan",
     type: "website",
   },

@@ -5,6 +5,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
 import { Reveal } from "@/components/ui/Reveal";
+import { withBasePath } from "@/lib/utils";
 
 const projects = [
   {
@@ -55,7 +56,7 @@ export function SelectedWork() {
           <div className="grid grid-cols-1 overflow-hidden rounded-xl border border-border lg:grid-cols-2">
             <div className="relative order-2 aspect-square bg-muted lg:order-1 lg:aspect-auto">
               <Image
-                src="/movexa/hero.jpg"
+                src={withBasePath("/movexa/hero.jpg")}
                 alt="Movexa home dashboard — Your AI Fitness Coach"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
