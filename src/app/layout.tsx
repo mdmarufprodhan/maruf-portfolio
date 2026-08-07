@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const title = "Maruf Prodhan — Founder & Product Builder";
+const title = "Md Maruf Prodhan — Founder & Product Builder";
 const description =
   "Founder of Movexa and iOS product builder. I build AI-powered products that turn complex problems into simple, useful experiences.";
 const siteUrl = "https://mdmarufprodhan.github.io/maruf-portfolio";
@@ -21,12 +21,12 @@ const ogImageUrl = `${siteUrl}/og`;
 export const metadata: Metadata = {
   title,
   description,
-  authors: [{ name: "Maruf Prodhan" }],
+  authors: [{ name: "Md Maruf Prodhan" }],
   openGraph: {
     title,
     description,
     url: siteUrl,
-    siteName: "Maruf Prodhan",
+    siteName: "Md Maruf Prodhan",
     type: "website",
     images: [{ url: ogImageUrl, width: 1200, height: 630 }],
   },
@@ -48,7 +48,7 @@ export const viewport: Viewport = {
 const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Maruf Prodhan",
+  name: "Md Maruf Prodhan",
   jobTitle: "Founder & Product Builder",
   description,
   sameAs: [

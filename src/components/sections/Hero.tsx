@@ -24,7 +24,7 @@ export function Hero() {
         <div className="flex flex-col gap-4">
           <Reveal>
             <span className="font-mono text-xs uppercase tracking-wider text-muted-foreground">
-              Maruf Prodhan
+              Md Maruf Prodhan
             </span>
           </Reveal>
 

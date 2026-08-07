@@ -20,7 +20,7 @@ export function Footer() {
         <div className="flex flex-col gap-10 sm:flex-row sm:items-start sm:justify-between">
           <div>
             <p className="text-base font-semibold tracking-tight">
-              Maruf Prodhan
+              Md Maruf Prodhan
             </p>
             <p className="mt-2 text-sm text-muted-foreground">
               Founder &amp; Product Builder
@@ -51,7 +51,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-border pt-6">
           <p className="text-xs text-muted-foreground">
-            © 2026 Maruf Prodhan
+            © 2026 Md Maruf Prodhan
           </p>
         </div>
       </Container>

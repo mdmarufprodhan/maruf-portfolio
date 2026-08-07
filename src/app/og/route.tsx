@@ -40,12 +40,12 @@ export async function GET() {
           style={{
             display: "flex",
             marginTop: 28,
-            fontSize: 88,
+            fontSize: 76,
             fontWeight: 700,
             letterSpacing: -2,
           }}
         >
-          Maruf Prodhan
+          Md Maruf Prodhan
         </div>
         <div
           style={{
