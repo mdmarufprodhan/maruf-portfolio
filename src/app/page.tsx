@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
+import { Services } from "@/components/sections/Services";
 import { About } from "@/components/sections/About";
 import { FounderJourney } from "@/components/sections/FounderJourney";
 import { Movexa } from "@/components/sections/Movexa";
@@ -16,6 +17,7 @@ export default function Home() {
       <Navbar />
       <main id="main-content" className="flex-1">
         <Hero />
+        <Services />
         <About />
         <FounderJourney />
         <Movexa />
