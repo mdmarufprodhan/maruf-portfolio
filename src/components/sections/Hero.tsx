@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
@@ -29,31 +29,37 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={0.05}>
-            <h1 className="max-w-3xl text-5xl font-semibold tracking-tight text-balance sm:text-6xl lg:text-7xl">
-              Founder &amp; Product Builder
+            <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-balance sm:text-5xl lg:text-6xl">
+              Production-ready iOS apps. From idea to App Store.
             </h1>
           </Reveal>
 
           <Reveal delay={0.1}>
-            <Badge>Founder of Movexa · iOS Developer</Badge>
+            <Badge>iOS Developer &amp; Startup Founder</Badge>
           </Reveal>
         </div>
 
         <Reveal delay={0.15}>
           <p className="max-w-xl text-lg leading-relaxed text-foreground/80 sm:text-xl">
-            I build AI-powered products that turn complex problems into
-            simple, useful experiences.
+            I help startups and businesses ship native iOS products —
+            Swift, SwiftUI, UIKit, and AI where it adds real value.
           </p>
         </Reveal>
 
         <Reveal delay={0.2}>
-          <div className="flex flex-wrap items-center gap-4">
-            <Button href="#movexa" size="lg">
-              Explore Movexa <ArrowUpRight className="size-4" />
-            </Button>
-            <Button href="#work" size="lg" variant="secondary">
-              View My Work
-            </Button>
+          <div className="flex flex-col gap-4">
+            <div className="flex flex-wrap items-center gap-4">
+              <Button href="#contact" size="lg">
+                Let&apos;s Build Your App <ArrowRight className="size-4" />
+              </Button>
+              <Button href="#work" size="lg" variant="secondary">
+                View My Work
+              </Button>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              6 apps shipped to the App Store · Founder of Movexa, built
+              end-to-end.
+            </p>
           </div>
         </Reveal>
       </Container>
