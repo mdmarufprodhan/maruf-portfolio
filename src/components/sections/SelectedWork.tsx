@@ -15,6 +15,9 @@ type Project = {
   link: string | null;
   screenshot?: string;
   screenshotAlt?: string;
+  // object-position value, tuned per screenshot so the crop lands on real
+  // app content instead of empty status-bar space.
+  screenshotPosition?: string;
 };
 
 const projects: Project[] = [
@@ -28,6 +31,7 @@ const projects: Project[] = [
     screenshot: "/work/shadhin-music.png",
     screenshotAlt:
       "Shadhin Music app home screen with a featured exclusive podcast and personalized listening recommendations",
+    screenshotPosition: "50% 15%",
   },
   {
     name: "AISocial",
@@ -36,6 +40,10 @@ const projects: Project[] = [
       "AI assistant and chat app powered by RESTful AI APIs. Built the SwiftUI interface end-to-end with a focus on responsive layout and smooth UX.",
     tech: ["SwiftUI", "REST APIs"],
     link: null,
+    screenshot: "/work/aisocial.png",
+    screenshotAlt:
+      "Hey Buddy AI chat app home screen with character search",
+    screenshotPosition: "50% 5%",
   },
   {
     name: "Reserveit BD",
@@ -44,6 +52,10 @@ const projects: Project[] = [
       "Booking and reservation app for local venues and services. Led UI design and built the app's custom views and layouts.",
     tech: ["SwiftUI", "UIKit"],
     link: null,
+    screenshot: "/work/reserveit-bd.png",
+    screenshotAlt:
+      "Reserveit BD app showing restaurant and beauty salon booking categories",
+    screenshotPosition: "50% 20%",
   },
   {
     name: "Deen & Noor",
@@ -52,6 +64,9 @@ const projects: Project[] = [
       "Islamic lifestyle apps within the Shadhin ecosystem — Quran, Hadith collections, and prayer times. Contributed feature development and UI across both apps.",
     tech: ["SwiftUI", "UIKit"],
     link: null,
+    screenshot: "/work/noor.png",
+    screenshotAlt: "Noor app showing daily prayer times in Dhaka",
+    screenshotPosition: "50% 55%",
   },
 ];
 
@@ -126,7 +141,10 @@ export function SelectedWork() {
                       alt={project.screenshotAlt ?? `${project.name} screenshot`}
                       fill
                       sizes="(min-width: 640px) 380px, 90vw"
-                      className="object-cover object-[50%_15%]"
+                      style={{
+                        objectFit: "cover",
+                        objectPosition: project.screenshotPosition ?? "50% 50%",
+                      }}
                     />
                   ) : (
                     <div className="flex h-full items-center justify-center gap-2 border border-dashed border-border text-muted-foreground">
