@@ -6,6 +6,7 @@ import { About } from "@/components/sections/About";
 import { FounderJourney } from "@/components/sections/FounderJourney";
 import { Movexa } from "@/components/sections/Movexa";
 import { SelectedWork } from "@/components/sections/SelectedWork";
+import { HowIWork } from "@/components/sections/HowIWork";
 import { TechnicalExpertise } from "@/components/sections/TechnicalExpertise";
 import { Philosophy } from "@/components/sections/Philosophy";
 import { CurrentFocus } from "@/components/sections/CurrentFocus";
@@ -22,6 +23,7 @@ export default function Home() {
         <FounderJourney />
         <Movexa />
         <SelectedWork />
+        <HowIWork />
         <TechnicalExpertise />
         <Philosophy />
         <CurrentFocus />
