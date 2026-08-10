@@ -31,7 +31,7 @@ const projects: Project[] = [
     screenshot: "/work/shadhin-music.png",
     screenshotAlt:
       "Shadhin Music app home screen with a featured exclusive podcast and personalized listening recommendations",
-    screenshotPosition: "50% 15%",
+    screenshotPosition: "50% 22%",
   },
   {
     name: "AISocial",
