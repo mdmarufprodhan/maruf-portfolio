@@ -34,7 +34,7 @@ export async function GET() {
             color: "#8a8a93",
           }}
         >
-          Founder of Movexa · iOS Developer
+          iOS Developer for Startups &amp; Businesses
         </div>
         <div
           style={{
@@ -56,7 +56,7 @@ export async function GET() {
             color: "#6366f1",
           }}
         >
-          Founder &amp; Product Builder
+          Swift · SwiftUI · AI Integration
         </div>
       </div>
     ),

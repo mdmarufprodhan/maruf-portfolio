@@ -12,16 +12,30 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const title = "Md Maruf Prodhan — Founder & Product Builder";
+const title = "Md Maruf Prodhan — iOS Developer for Startups & Businesses";
 const description =
-  "Founder of Movexa and iOS product builder. I build AI-powered products that turn complex problems into simple, useful experiences.";
+  "iOS developer for startups and businesses — Swift & SwiftUI apps, idea to App Store launch, with AI integrations. Available for freelance and agency work.";
 const siteUrl = "https://mdmarufprodhan.github.io/maruf-portfolio";
 const ogImageUrl = `${siteUrl}/og`;
 
 export const metadata: Metadata = {
   title,
   description,
+  keywords: [
+    "iOS developer",
+    "Swift developer",
+    "SwiftUI developer",
+    "iOS app development",
+    "iOS developer for startups",
+    "iOS MVP development",
+    "AI iOS developer",
+    "freelance iOS developer",
+    "iOS development agency partner",
+  ],
   authors: [{ name: "Md Maruf Prodhan" }],
+  alternates: {
+    canonical: siteUrl,
+  },
   openGraph: {
     title,
     description,
@@ -49,8 +63,28 @@ const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Md Maruf Prodhan",
-  jobTitle: "Founder & Product Builder",
+  jobTitle: "iOS Developer",
   description,
+  url: siteUrl,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Dhaka",
+    addressCountry: "BD",
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "University of Asia Pacific",
+  },
+  knowsAbout: [
+    "iOS Development",
+    "Swift",
+    "SwiftUI",
+    "UIKit",
+    "AI Integration",
+    "Mobile App Development",
+    "Startup MVP Development",
+    "App Store Deployment",
+  ],
   sameAs: [
     "https://www.linkedin.com/in/md-maruf-prodhan-187948b8",
     "https://github.com/mdmarufprodhan",
