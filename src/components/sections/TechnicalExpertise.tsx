@@ -14,6 +14,7 @@ const categories = [
       "UIKit",
       "Combine",
       "Core Data",
+      "AVFoundation",
       "StoreKit",
       "Push Notifications",
     ],
@@ -21,7 +22,15 @@ const categories = [
   {
     icon: Blocks,
     title: "Architecture",
-    skills: ["MVVM", "MVC", "REST APIs"],
+    skills: [
+      "MVVM",
+      "MVC",
+      "MVVM-C",
+      "Coordinator Pattern",
+      "Clean Architecture",
+      "Dependency Injection",
+      "REST APIs",
+    ],
   },
   {
     icon: Cloud,
