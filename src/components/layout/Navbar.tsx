@@ -61,7 +61,7 @@ export function Navbar() {
             <a
               key={item.label}
               href={item.href}
-              className="text-sm text-muted-foreground transition-colors duration-200 hover:text-foreground"
+              className="text-sm text-muted-foreground transition-colors duration-200 hover:text-accent"
             >
               {item.label}
             </a>
@@ -106,7 +106,7 @@ export function Navbar() {
                     key={item.label}
                     href={item.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className="rounded-md px-2 py-3 text-base text-foreground/90 transition-colors duration-200 hover:bg-muted"
+                    className="rounded-md px-2 py-3 text-base text-foreground/90 transition-colors duration-200 hover:bg-muted hover:text-accent"
                   >
                     {item.label}
                   </a>
