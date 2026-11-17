@@ -5,7 +5,7 @@ import { Reveal } from "@/components/ui/Reveal";
 
 const stats = [
   { value: "4+", label: "Years of production iOS development" },
-  { value: "6", label: "Apps shipped to the App Store" },
+  { value: "7", label: "Apps shipped to the App Store" },
   { value: "2", label: "Live, verifiable App Store listings" },
 ];
 

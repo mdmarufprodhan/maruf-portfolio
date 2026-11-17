@@ -46,8 +46,8 @@ export function Contact() {
           <Reveal>
             <SectionHeading
               eyebrow="Contact"
-              title="Have an App Idea? Let's Build It."
-              description="I'm currently available for new projects — startups, small businesses, and agencies looking for an iOS partner who can take an idea from first sketch to App Store launch."
+              title="Let's Connect"
+              description="I'm open to new projects, collaborations, and conversations — whether that's shipping an app or talking through a product idea."
               align="center"
             />
           </Reveal>

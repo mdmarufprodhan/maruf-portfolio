@@ -26,7 +26,7 @@ const services = [
     icon: Rocket,
     title: "Startup MVP Development",
     description:
-      "Go from idea to real users, fast. I scope, build, and ship a focused MVP you can test and grow.",
+      "Scoping, building, and shipping a focused MVP — from idea to real users, fast.",
     tags: ["Idea to MVP", "TestFlight", "App Store Launch"],
   },
   {
@@ -53,14 +53,14 @@ const services = [
     icon: Upload,
     title: "App Store Launch & Maintenance",
     description:
-      "From submission to long-term upkeep — I handle App Store review and keep everything running smoothly.",
+      "From submission to long-term upkeep — App Store review handled end-to-end, with everything kept running smoothly.",
     tags: ["App Store Submission", "Updates", "Bug Fixes", "Optimization"],
   },
   {
     icon: Wrench,
     title: "Existing App Improvement",
     description:
-      "Already have an app? I modernize the UI, migrate UIKit to SwiftUI, and ship the features you've been putting off.",
+      "Modernizing existing apps — UI refreshes, UIKit to SwiftUI migration, and shipping features that have been put off.",
     tags: ["SwiftUI Migration", "Performance", "New Features"],
   },
 ];
@@ -104,10 +104,10 @@ export function Services() {
         <Reveal delay={0.1}>
           <div className="mt-16 flex flex-col items-center gap-5 border-t border-border pt-16 text-center">
             <p className="text-xl font-medium tracking-tight text-balance sm:text-2xl">
-              Have an app idea? Let&apos;s talk.
+              Interested in working together?
             </p>
             <Button href="#contact" size="lg">
-              Let&apos;s Build Your App <ArrowRight className="size-4" />
+              Contact Me <ArrowRight className="size-4" />
             </Button>
           </div>
         </Reveal>

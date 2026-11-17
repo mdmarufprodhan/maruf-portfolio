@@ -50,14 +50,14 @@ export function Hero() {
           <div className="flex flex-col gap-4">
             <div className="flex flex-wrap items-center gap-4">
               <Button href="#contact" size="lg">
-                Let&apos;s Build Your App <ArrowRight className="size-4" />
+                Get in Touch <ArrowRight className="size-4" />
               </Button>
               <Button href="#work" size="lg" variant="secondary">
                 View My Work
               </Button>
             </div>
             <p className="text-sm text-muted-foreground">
-              6 apps shipped to the App Store · Founder of Movexa, built
+              7 apps shipped to the App Store · Founder of Movexa, built
               end-to-end.
             </p>
           </div>
